@@ -5,6 +5,8 @@ const Seattle = {
   maxc: 65,
   avgCookie: 6.3,
   sum: 0,
+  cookiesale: [],
+  cup: [],
   random: function() {
     return generateRandomNumber(this.minc, this.maxc);
   },
@@ -28,8 +30,10 @@ const Seattle = {
     parentElement.appendChild(ulElement);
     for(let i = 0; i < this.time.length; i++) {
       let b =this.random();
+      this.cup.push(Math.ceil(b));
       let a = b*this.avgCookie;
       a= Math.ceil(a);
+      this.cookiesale.push(a);
       this.sum += a;
       const liElement = document.createElement('li');
       ulElement.appendChild(liElement);
@@ -50,6 +54,8 @@ const a = {
   maxc: 24,
   avgCookie: 1.2,
   sum: 0,
+  cookiesale: [],
+  cup: [],
   random: function() {
     return generateRandomNumber(this.minc, this.maxc);
   },
@@ -73,8 +79,10 @@ const a = {
     parentElement.appendChild(ulElement);
     for(let i = 0; i < this.time.length; i++) {
       let b =this.random();
+      this.cup.push(Math.ceil(b));
       let a = b*this.avgCookie;
       a= Math.ceil(a);
+      this.cookiesale.push(a);
       this.sum += a;
       const liElement = document.createElement('li');
       ulElement.appendChild(liElement);
@@ -93,6 +101,8 @@ const b = {
   maxc: 38,
   avgCookie: 3.7,
   sum: 0,
+  cookiesale: [],
+  cup: [],
   random: function() {
     return generateRandomNumber(this.minc, this.maxc);
   },
@@ -116,8 +126,10 @@ const b = {
     parentElement.appendChild(ulElement);
     for(let i = 0; i < this.time.length; i++) {
       let b =this.random();
+      this.cup.push(Math.ceil(b));
       let a = b*this.avgCookie;
       a= Math.ceil(a);
+      this.cookiesale.push(a);
       this.sum += a;
       const liElement = document.createElement('li');
       ulElement.appendChild(liElement);
@@ -136,6 +148,8 @@ const c = {
   maxc: 38,
   avgCookie: 2.3,
   sum: 0,
+  cookiesale: [],
+  cup: [],
   random: function() {
     return generateRandomNumber(this.minc, this.maxc);
   },
@@ -159,8 +173,10 @@ const c = {
     parentElement.appendChild(ulElement);
     for(let i = 0; i < this.time.length; i++) {
       let b =this.random();
+      this.cup.push(Math.ceil(b));
       let a = b*this.avgCookie;
       a= Math.ceil(a);
+      this.cookiesale.push(a);
       this.sum += a;
       const liElement = document.createElement('li');
       ulElement.appendChild(liElement);
@@ -179,6 +195,8 @@ const d = {
   maxc: 4.6,
   avgCookie: 2.3,
   sum: 0,
+  cookiesale: [],
+  cup: [],
   random: function() {
     return generateRandomNumber(this.minc, this.maxc);
   },
@@ -202,8 +220,10 @@ const d = {
     parentElement.appendChild(ulElement);
     for(let i = 0; i < this.time.length; i++) {
       let b =this.random();
+      this.cup.push(Math.ceil(b));
       let a = b*this.avgCookie;
       a= Math.ceil(a);
+      this.cookiesale.push(a);
       this.sum += a;
       const liElement = document.createElement('li');
       ulElement.appendChild(liElement);
